@@ -45,7 +45,7 @@ jobs:
           git commit -m "$random_msg - $current_time" || echo "No changes to commit."
 
       - name: GitHub Push
-        uses: ad-m/github-push-action@v1
+        uses: ad-m/github-push-action@v0.6.0
         with:
           directory: '.'
           github_token: ${{ secrets.GITHUB_TOKEN }}
